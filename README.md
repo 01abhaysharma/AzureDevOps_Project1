@@ -2,7 +2,7 @@
 
 # Creating a CI/CD pipeline for a ASP dot net web application using Azure DevOps
 
-# Step 1: Creating a Sample .NET Code using Visual Studio
+# Step 1: Creating a Sample .NET Application Code using Visual Studio
 
 1. Open Visual Studio and click on "Create a new project".
 2. Select "ASP.NET Core Web Application" and click on "Next".
@@ -14,9 +14,11 @@
 8. Save the file.
 9. Build and Run the project.
 
-That's it! Your sample .NET code is now ready. (A sample dot net code can be found here: https://github.com/01abhaysharma/sample_dotnetapp_ADOproject1)
+That's it! Your sample .NET code is now ready. (This sample dot net code can be found here: https://github.com/01abhaysharma/sample_dotnetapp_ADOproject1)
 
-# Step 2: Uploading Sample Code to GitHub
+Watch this hands-on video here: https://youtu.be/5tgbfaZr1UA
+
+# Step 2: Uploading Sample dot net Code to GitHub
 
 1. Go to the GitHub website and sign in to your account.
 2. On the homepage, click on the "Create a new repository" button or go to your profile and click on the "New" button.
@@ -57,7 +59,19 @@ That's it! Your App service is now created.
 8. Click on "Import" to import the codebase into the Azure DevOps repository.
 9. Once you have created the Azure DevOps project and imported the .NET 6 web application codebase, you can proceed to the next step, which is to create a new pipeline in Azure DevOps.
 
-# Step 4: Creating a New Pipeline in Azure DevOps
+## Step 5: Creating a New Service Connection in Azure DevOps:
+
+1. Navigate to your Azure DevOps project and click on "Project settings" in the bottom left corner.
+2. In the Project Settings menu, click on "Service connections" under "Pipelines".
+3. Click on the "+ New service connection" button in the top right corner and select the service you want to connect to. For this project, select "Azure Resource Manager" as the type of service connection.
+4. Select the scope type as "Subscription". A new window will open for authentication to authenticate with Azure.
+5. Once authenticated, select the resource group, provide a name for the service connection, and check "Grant access to all pipelines". Then click on "Save".
+6. That's it! Your service connection is now created.
+
+After creating the service connection, you can use it in your pipeline YAML file to deploy your application to the connected environment.
+
+
+# Step 6: Creating a New Pipeline in Azure DevOps
 
 1. Navigate to your Azure DevOps project and click on "Pipelines" in the left sidebar.
 2. Click on "New pipeline" to create a new pipeline.

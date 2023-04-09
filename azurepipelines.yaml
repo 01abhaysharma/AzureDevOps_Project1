@@ -45,6 +45,6 @@ steps:
 
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: 'Learning-SC'
-    appName: 'Learningappservice'
+    azureSubscription: '<service connection name'
+    appName: '<app service name>'
     package: '$(System.ArtifactsDirectory)/package/**/*.zip'

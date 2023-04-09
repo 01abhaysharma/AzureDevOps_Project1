@@ -2,7 +2,7 @@
 
 # Creating a CI/CD pipeline for a ASP dot net web application using Azure DevOps
 
-# Step 1: Creating a Sample .NET Application Code using Visual Studio
+# Step 1: Creating a sample .NET application code using Visual Studio
 
 1. Open Visual Studio and click on "Create a new project".
 2. Select "ASP.NET Core Web Application" and click on "Next".
@@ -18,7 +18,7 @@ That's it! Your sample .NET code is now ready. (This sample dot net code can be 
 
 Watch this hands-on video here: https://youtu.be/5tgbfaZr1UA
 
-# Step 2: Uploading Sample dot net Code to GitHub
+# Step 2: Uploading sample dot net Code to GitHub
 
 1. Go to the GitHub website and sign in to your account.
 2. On the homepage, click on the "Create a new repository" button or go to your profile and click on the "New" button.
@@ -30,6 +30,8 @@ Watch this hands-on video here: https://youtu.be/5tgbfaZr1UA
 8. Once your files are uploaded, you can commit them to the repository by adding a commit message and clicking on the "Commit changes" button.
 
 That's it! Your code is now uploaded to your GitHub repository.
+
+Watch this hands-on video here: https://youtu.be/FieaJaYX6sY
 
 # Step 3: Creating a Resource Group and App Service under that Resource Group in Azure Portal
 

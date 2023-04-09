@@ -37,17 +37,19 @@ Watch this hands-on video here: https://youtu.be/FieaJaYX6sY
 
 1. Login to your Azure portal and select "Resource groups" from the left-hand menu.
 2. Click on the "+ Add" button to create a new resource group.
-3. Provide a name for the resource group and select a region. Click on the "Review + create" button.
+3. Select Subscription, provide a name for the resource group and select a region. Click on the "Review + create" button.
 4. Review the settings and click on the "Create" button.
 5. Once the resource group is created, go to the "App Services" section in the Azure portal.
 6. Click on the "+ Add" button to create a new app service.
 7. Select the appropriate subscription, resource group, and name for the app service.
-8. Select a runtime stack and operating system for your app service. For example, if you used ASP.NET Core, you can select ".NET Core" as the runtime stack and "Windows" as the operating system.
-9. Choose an appropriate region for the app service and click on the "Review + create" button.
+8. Select a publish, runtime stack and operating system for your app service. For example, if you used ASP.NET Core, you can select ".NET Core" as the runtime stack and "Windows" as the operating system and You can select publish as "code".
+9. Choose an appropriate region for the app service, select the pricing plan, keep rest of the details as default and click on the "Review + create" button.
 10. Review the settings and click on the "Create" button.
 11. Wait for a few minutes until the app service is created.
 
-That's it! Your App service is now created.
+That's it! Your Resource Group and App service under that Resource Group is now created.
+
+Watch this hands-on video here: https://youtu.be/yyoO_usHZVM & https://youtu.be/F_IRVzsrsz0
 
 # Step 4: Creating a New Azure DevOps Project and Repository
 

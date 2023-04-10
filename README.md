@@ -65,7 +65,7 @@ Watch this hands-on video here: https://youtu.be/yyoO_usHZVM & https://youtu.be/
 10. Select "Git" as the version control system for your project.
 11. Click on "Create" to create the project.
 
-That's it! Your Organization and Project is created in Azure DevOps
+That's it! Your Organization and Project are now created in Azure DevOps
 
 Watch this hands-on video here: https://youtu.be/KsSDcvJsU_4
 

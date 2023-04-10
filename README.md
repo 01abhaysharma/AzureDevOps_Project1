@@ -1,6 +1,6 @@
 # Azure DevOps Project 1
 
-# Creating a CI/CD pipeline for a ASP dot net web application using Azure DevOps
+# Creating a CI/CD pipeline to deploy ASP .NET web application using Azure DevOps
 
 # Step 1: Creating a sample .NET application code using Visual Studio
 
@@ -18,7 +18,7 @@ That's it! Your sample .NET code is now ready. (This sample dot net code can be 
 
 Watch this hands-on video here: https://youtu.be/5tgbfaZr1UA
 
-# Step 2: Uploading sample dot net Code to GitHub
+# Step 2: Uploading sample dot net code to GitHub
 
 1. Go to the GitHub website and sign in to your account.
 2. On the homepage, click on the "Create a new repository" button or go to your profile and click on the "New" button.
@@ -84,7 +84,7 @@ That's it! Your GitHub repository is now imported into Azure DevOps Project Repo
 
 Watch this hands-on video here: https://youtu.be/0QsuR-iA3BM
 
-# Step 6: Creating a new Service Connection in Azure DevOps:
+# Step 6: Creating a new Service Connection in Azure DevOps
 
 1. Navigate to your Azure DevOps project and click on "Project settings" in the bottom left corner.
 2. In the Project Settings menu, click on "Service connections" under "Pipelines".
@@ -106,7 +106,7 @@ Watch this hands-on video here: https://youtu.be/dWPRq_8TAIE
 5. In the "Configure your pipeline" step, choose the build agent pool you want to use. The default agent pool should work fine for this project.
 6. In the "Review your pipeline YAML" step, review the pipeline YAML file and make any necessary modifications. Below is an example YAML file for this project:
 
-## YAML used for this project:
+## YAML file used for this project:
 
 ```yaml
 trigger:
@@ -164,7 +164,7 @@ steps:
 7. Click on "Save and run" to save the pipeline and trigger the pipeline.
 8. Once pipeline is completed successfully, navigate to Your App service in Azure portal and click on default domain URL in overview section and see Your code is deployed to this App service.
 
-## YAML task details
+## YAML file task details:
 
 - UseDotNet task (`UseDotNet@2`) - This installs the .NET Core SDK and runtime needed to build and run the application (if it's not already installed).
 - DotNetCoreCLI task (`DotNetCoreCLI@2`) (`build`) - This builds the application. It compiles the .NET Core application code into an executable form.
@@ -174,7 +174,7 @@ steps:
 - DownloadBuildArtifacts task (`DownloadBuildArtifacts@0`) - This downloads the build artifact to a specified directory. This task downloads the build artifacts from the artifact staging directory. It is used in subsequent stages to deploy the application.
 - AzureWebApp task (`AzureWebApp@1`) (`deploy`) - This deploys the contents of the build artifact to an Azure Web App. This task deploys the .NET Core application to an Azure Web App service. It requires an Azure subscription and a connection to the Azure Web App service.
 
-That's it! This project is now complete.
-
 Watch this hands-on video here: https://youtu.be/TdvpZr5FYpk
+
+That's it! This project is now complete.
 
